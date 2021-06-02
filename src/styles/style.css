@@ -97,3 +97,11 @@ header .moon:hover {
   color: rgb(250, 0, 0);
   text-shadow: 0px 0px 5px #f00;
 }
+
+.img-container {
+  width: 150px;
+}
+
+.img-container img {
+  width: 100%;
+}
