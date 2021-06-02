@@ -34,3 +34,31 @@
   transition: 500ms;
   color: var(--secundary-dark);
 }
+
+.fa-sun {
+  color: #ff7b00;
+}
+
+.fa-sun:hover {
+  color: #ff9634;
+}
+
+.header-day {
+  background: var(--transparent-dark);
+  transition: 500ms ease-in-out;
+}
+
+.header-night {
+  background: var(--dark);
+  transition: 500ms ease-in-out;
+}
+
+.main-day {
+  background-color: #fff;
+  transition: 500ms ease-in-out;
+}
+
+.main-night {
+  background-color: var(--dark-template);
+  transition: 500ms ease-in-out;
+}

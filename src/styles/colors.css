@@ -1,10 +1,12 @@
 * {
+  --dark: #161616;
+  --dark-template: rgb(26, 26, 26);
   --transparent-dark: #00000013;
   --background-primary-gray: #dadada;
   --primary-gray: #b8b8b8;
   --background-secundary-gray: #c4c3c3;
   --secundary-gray: #9c9c9c;
-  --background-primary-dark: #363636;
+  --background-primary-dark: #292928;
   --primary-dark: #4b4b4b;
   --background-secundary-dark: #3f3e3e;
   --secundary-dark: #666666;
