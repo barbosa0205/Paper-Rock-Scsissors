@@ -1,3 +1,4 @@
+@import url('./fonts.css');
 * {
   box-sizing: border-box;
   padding: 0;
@@ -39,12 +40,12 @@ header .moon {
 }
 
 header span:hover {
-  transition: 500ms ease-in;
+  transition: 500ms;
   background-color: #3f3e3e;
 }
 
 header .moon:hover {
-  transition: 500ms ease-in;
+  transition: 500ms;
   color: #666666;
 }
 
@@ -58,10 +59,15 @@ header .moon:hover {
 
 .title-container {
   text-align: center;
-  width: 500px;
-  height: 150px;
   margin-top: 60px;
-  background-color: green;
+}
+
+.title-container p {
+  margin: 1rem;
+  font-size: 8rem;
+  font-family: pixlkrud;
+  color: #00ce00;
+  text-shadow: 1px 1px 1px #000;
 }
 
 .game-container {
@@ -71,7 +77,6 @@ header .moon:hover {
   max-width: 1000px;
   height: 80%;
   margin-bottom: 10%;
-  background-color: pink;
 }
 
 .player-container {
@@ -84,4 +89,11 @@ header .moon:hover {
 .vs {
   text-align: center;
   width: 20%;
+}
+
+.vs p {
+  font-family: 'Enhanced Dot Digital-7';
+  font-size: 7rem;
+  color: rgb(250, 0, 0);
+  text-shadow: 0px 0px 5px #f00;
 }
