@@ -1,5 +1,4 @@
 @import url('./fonts.css');
-@import url('./colors.css');
 * {
   box-sizing: border-box;
   padding: 0;
@@ -12,6 +11,7 @@ html {
 
 body {
   font-size: 1.6rem;
+  min-width: 466px;
 }
 
 header {
@@ -36,24 +36,11 @@ nav span {
   margin: 20px 40px 20px;
   cursor: pointer;
   border-radius: 8px;
-  background-color: var(--background-primary-gray);
 }
 
 nav .moon {
   font-size: 3.5rem;
   font-weight: bold;
-  text-shadow: 0 0 2px #666666;
-  color: var(--primary-gray);
-}
-
-nav span:hover {
-  transition: 500ms;
-  background-color: var(--background-secundary-gray);
-}
-
-nav .moon:hover {
-  transition: 500ms;
-  color: var(--secundary-gray);
 }
 
 .title-container {

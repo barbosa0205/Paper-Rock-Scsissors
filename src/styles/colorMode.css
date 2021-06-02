@@ -1,0 +1,36 @@
+.span-day {
+  background-color: var(--background-primary-gray);
+}
+
+.span-night {
+  background-color: var(--background-primary-dark);
+}
+
+.moon-day {
+  text-shadow: 0 0 2px #666666;
+  color: var(--primary-gray);
+}
+
+.moon-night {
+  text-shadow: 0 0 2px #666666;
+  color: var(--primary-dark);
+}
+
+.span-day:hover {
+  transition: 500ms;
+  background-color: var(--background-secundary-gray);
+}
+
+.span-night:hover {
+  transition: 500ms;
+  background-color: var(--background-secundary-dark);
+}
+
+.moon-day:hover {
+  transition: 500ms;
+  color: var(--secundary-gray);
+}
+.moon-night:hover {
+  transition: 500ms;
+  color: var(--secundary-dark);
+}
