@@ -10,6 +10,7 @@ html {
 }
 
 body {
+  min-width: 465px;
   font-size: 1.6rem;
   min-width: 466px;
 }
@@ -66,7 +67,6 @@ nav .moon {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 100vh;
   padding-top: 100px;
 }
 
@@ -83,7 +83,6 @@ nav .moon {
   display: flex;
   justify-content: center;
   width: 40%;
-  height: 100%;
 }
 
 .vs {
@@ -104,4 +103,48 @@ nav .moon {
 
 .img-container img {
   width: 100%;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 60px;
+}
+
+.button-out {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background: var(--neon-red);
+  border-radius: 50%;
+  box-shadow: 0 0 5px 1px #2b2b2b;
+}
+
+.button-on {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 4px solid #ee4747;
+  box-shadow: 0 0 4px 0 rgb(44, 44, 44);
+  background: var(--neon-red);
+}
+
+.reflect {
+  position: absolute;
+  width: 62px;
+  height: 60px;
+  border-radius: 50%;
+  /* border-top: 1px solid #000; */
+  box-shadow: 0px -1px 0px 0px rgb(194, 59, 59);
+  background-color: none;
+  transform: rotate(40deg);
 }

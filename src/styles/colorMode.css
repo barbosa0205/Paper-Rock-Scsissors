@@ -13,7 +13,7 @@
 
 .moon-night {
   text-shadow: 0 0 2px #666666;
-  color: var(--primary-dark);
+  color: rgb(212, 212, 212);
 }
 
 .span-day:hover {
@@ -32,15 +32,17 @@
 }
 .moon-night:hover {
   transition: 500ms;
-  color: var(--secundary-dark);
+  color: #fff;
 }
 
 .fa-sun {
   color: #ff7b00;
+  transition: 500ms;
 }
 
 .fa-sun:hover {
   color: #ff9634;
+  transition: 500ms;
 }
 
 .header-day {

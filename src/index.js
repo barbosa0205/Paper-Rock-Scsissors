@@ -8,8 +8,6 @@ let count = 0
 const changeNightMode = () => {
   colorMode.className += ' moon-night'
   colorMode.classList.remove('moon-day')
-  colorMode.classList.remove('fa-moon')
-  colorMode.className += ' fa-sun'
   nightBtn.className += ' span-night'
   nightBtn.classList.remove('span-day')
   header.className += ' header-night'
