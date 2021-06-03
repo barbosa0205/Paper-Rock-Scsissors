@@ -14,7 +14,9 @@ let e
 //Close Alert
 const closeAlert = () => {
   overlay.classList.remove('overlay-visible')
+  overlay.className += ' overlay-hidden'
   alert.classList.remove('alert-visible')
+  alert.className += ' alert-hidden'
   alert.classList.remove('alert-won')
   alert.classList.remove('alert-tie')
   alert.classList.remove('alert-lost')
@@ -24,17 +26,23 @@ const closeAlert = () => {
 const animation = e => {
   if (e == 1) {
     message.innerHTML = 'YOU WON <b>🏆</b>'
+    overlay.classList.remove('overlay-hidden')
     overlay.className += ' overlay-visible'
+    alert.classList.remove('alert-hidden')
     alert.className += ' alert-visible'
     alert.className += ' alert-won'
   } else if (e == 2) {
     message.innerHTML = 'TIE <b>🤝</b>'
+    overlay.classList.remove('overlay-hidden')
     overlay.className += ' overlay-visible'
+    alert.classList.remove('alert-hidden')
     alert.className += ' alert-visible'
     alert.className += ' alert-tie'
   } else {
     message.innerHTML = 'YOU LOST <b>😔</b>'
+    overlay.classList.remove('overlay-hidden')
     overlay.className += ' overlay-visible'
+    alert.classList.remove('alert-hidden')
     alert.className += ' alert-visible'
     alert.className += ' alert-lost'
   }

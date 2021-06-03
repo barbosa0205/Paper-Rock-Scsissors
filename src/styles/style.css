@@ -235,6 +235,12 @@ nav .moon {
   transition: 500ms ease all;
 }
 
+.alert-hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: 500ms ease all;
+}
+
 .message {
   font-family: fipps;
   font-size: 3rem;
@@ -252,6 +258,7 @@ nav .moon {
   right: 0;
   margin: 0 auto;
   width: 350px;
+  height: 40px;
   display: flex;
   justify-content: space-evenly;
 }
