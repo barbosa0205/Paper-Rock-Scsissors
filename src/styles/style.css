@@ -100,6 +100,7 @@ nav .moon {
 }
 
 .img-container {
+  position: relative;
   width: 150px;
 }
 
@@ -154,6 +155,10 @@ nav .moon {
   background: var(--neon-red);
 }
 
+.button-on img {
+  width: 30px;
+}
+
 .reflect {
   position: absolute;
   width: 62px;
@@ -201,6 +206,12 @@ nav .moon {
   transition: 500ms;
 }
 
+.overlay-hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: 500ms ease-in-out all;
+}
+
 .alert {
   position: absolute;
   width: 400px;
@@ -221,7 +232,7 @@ nav .moon {
 .alert-visible {
   visibility: visible;
   opacity: 1;
-  transition: 700ms ease all;
+  transition: 500ms ease all;
 }
 
 .message {
@@ -231,4 +242,38 @@ nav .moon {
 
 .message b {
   font-size: 4rem;
+}
+
+.retry-container {
+  position: absolute;
+  top: 220px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 350px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btnr {
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  height: 40px;
+  font-family: fipps;
+  font-size: 1.6rem;
+  border-radius: 6px;
+  background: #fff;
+  border: 2px solid #252525;
+  cursor: pointer;
+}
+
+.btnr:hover {
+  border: 2px solid #f74932;
+}
+
+.retry {
+}
+.reset {
 }
