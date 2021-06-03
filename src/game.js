@@ -9,6 +9,7 @@ const alert = document.querySelector('#alert')
 const message = document.querySelector('#message')
 const btnRetry = document.querySelector('#btn-retry')
 const btnReset = document.querySelector('#btn-reset')
+const alertMusic = document.querySelector('#alert-music')
 let e
 
 //Close Alert
@@ -25,6 +26,8 @@ const closeAlert = () => {
 
 const animation = e => {
   if (e == 1) {
+    alertMusic.src = './src/music/win.wav'
+    alertMusic.play()
     message.innerHTML = 'YOU WON <b>🏆</b>'
     overlay.classList.remove('overlay-hidden')
     overlay.className += ' overlay-visible'
@@ -32,6 +35,8 @@ const animation = e => {
     alert.className += ' alert-visible'
     alert.className += ' alert-won'
   } else if (e == 2) {
+    alertMusic.src = './src/music/tie.wav'
+    alertMusic.play()
     message.innerHTML = 'TIE <b>🤝</b>'
     overlay.classList.remove('overlay-hidden')
     overlay.className += ' overlay-visible'
@@ -39,6 +44,8 @@ const animation = e => {
     alert.className += ' alert-visible'
     alert.className += ' alert-tie'
   } else {
+    alertMusic.src = './src/music/lost.wav'
+    alertMusic.play()
     message.innerHTML = 'YOU LOST <b>😔</b>'
     overlay.classList.remove('overlay-hidden')
     overlay.className += ' overlay-visible'
