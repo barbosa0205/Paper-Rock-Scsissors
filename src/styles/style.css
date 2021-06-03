@@ -167,11 +167,18 @@ nav .moon {
 
 .play-out {
   background-color: #222222;
+  transition: 500ms;
 }
 
 .play-on {
   background-color: #202020;
   border: 1px solid #3f3e3e;
+  transition: 500ms;
+}
+
+.fa-play {
+  color: #fff;
+  transition: 500ms;
 }
 
 .reflect-play {

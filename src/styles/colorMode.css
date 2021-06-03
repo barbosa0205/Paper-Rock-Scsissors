@@ -64,3 +64,23 @@
   background-color: var(--dark-template);
   transition: 500ms ease-in-out;
 }
+
+.play-out-night {
+  background: #fff;
+  transition: 500ms;
+}
+
+.play-on-night {
+  background: #f8f8f8;
+  border: 1px solid #b3b3b3;
+  transition: 500ms;
+}
+
+.play-night {
+  color: #353535;
+  transition: 500ms;
+}
+
+.reflect-night {
+  box-shadow: 0px -1px 0px 0px rgb(173, 164, 164);
+}
