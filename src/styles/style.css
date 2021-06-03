@@ -102,6 +102,7 @@ nav .moon {
 .img-container {
   position: relative;
   width: 150px;
+  margin: 0 20px;
 }
 
 .img-container img {
