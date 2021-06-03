@@ -12,3 +12,8 @@
   font-family: 'Enhanced Dot Digital-7';
   src: url('../fonts/enhanced_dot_digital-7.ttf');
 }
+
+@font-face {
+  font-family: 'fipps';
+  src: url('../fonts/Fipps-Regular.otf');
+}

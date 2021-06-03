@@ -10,17 +10,20 @@ const message = document.querySelector('#message')
 
 const animation = e => {
   if (e == 1) {
-    message.innerText = 'YOU WON'
+    message.innerHTML = 'YOU WON <b>🏆</b>'
     overlay.className += ' overlay-visible'
     alert.className += ' alert-visible'
+    alert.className += ' alert-won'
   } else if (e == 2) {
-    message.innerText = 'TIE'
+    message.innerHTML = 'TIE <b>🤝</b>'
     overlay.className += ' overlay-visible'
     alert.className += ' alert-visible'
+    alert.className += ' alert-tie'
   } else {
-    message.innerText = 'YOU LOST'
+    message.innerHTML = 'YOU LOST <b>😔</b>'
     overlay.className += ' overlay-visible'
     alert.className += ' alert-visible'
+    alert.className += ' alert-lost'
   }
 }
 
