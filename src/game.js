@@ -4,11 +4,32 @@ const btnScissor = document.querySelector('#btn-scissor')
 const btnPlay = document.querySelector('#btn-play')
 const option = document.querySelector('#option')
 const CPU = document.querySelector('#cpu')
+const overlay = document.querySelector('#overlay')
+const alert = document.querySelector('#alert')
+const message = document.querySelector('#message')
+
+const animation = e => {
+  if (e == 1) {
+    message.innerText = 'YOU WON'
+    overlay.className += ' overlay-visible'
+    alert.className += ' alert-visible'
+  } else if (e == 2) {
+    message.innerText = 'TIE'
+    overlay.className += ' overlay-visible'
+    alert.className += ' alert-visible'
+  } else {
+    message.innerText = 'YOU LOST'
+    overlay.className += ' overlay-visible'
+    alert.className += ' alert-visible'
+  }
+}
+
 const random = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1) + min)
 }
 
 const toPlay = op => {
+  let e = 0
   cpu = random(1, 3)
 
   console.log(cpu, CPU)
@@ -21,15 +42,15 @@ const toPlay = op => {
     CPU.src = './src/media/icons/scissor.png'
   }
   if ((op == 1 && cpu == 3) || (op == 2 && cpu == 1) || (op == 3 && cpu == 2)) {
-    console.log('Yow Win')
+    animation((e = 1))
   } else if (
     (op == 1 && cpu == 1) ||
     (op == 2 && cpu == 2) ||
     (op == 3 && cpu == 3)
   ) {
-    console.log('Tie')
+    animation((e = 2))
   } else {
-    console.log('Cpu Win')
+    animation((e = 3))
   }
 }
 

@@ -184,3 +184,37 @@ nav .moon {
 .reflect-play {
   box-shadow: 0px -1px 0px 0px #5a4d4d;
 }
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.26);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay-visible {
+  visibility: visible;
+  opacity: 1;
+  transition: 500ms;
+}
+
+.alert {
+  width: 400px;
+  height: 200px;
+  background: #fff;
+  margin-top: 100px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.alert-visible {
+  visibility: visible;
+  opacity: 1;
+  transition: 700ms ease all;
+}
