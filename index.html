@@ -16,10 +16,10 @@
     <nav>
         <div class = 'menu-container'>
             <div id="btn-setting" class='icon-container span-day'>
-                <i id='icon-setting' class="fas fa-cog settings-day settings-night"></i>
+                <i id='icon-setting' class="fas fa-cog settings-day"></i>
             </div>
             <div id="btn-roller" class='icon-container span-day'>
-                <i id='icon-roller' class="fas fa-paint-roller roller-day roller-night"></i>
+                <i id='icon-roller' class="fas fa-paint-roller roller-day "></i>
             </div>
         </div>
         <span id='nightbtn' class='span-day'><i id="colormode" class="far fa-moon moon moon-day"></i></span>
@@ -80,16 +80,17 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div id='overlay' class="overlay">
-        <div id='alert' class="alert">
-            <audio id="alert-music" ></audio>
-            <p id ='message' class='message'></p>
-        </div>
-        <div class="retry-container">
-            <div id='btn-retry' class='btnr retry'><p>RETRY</p></div>
-            <div id='btn-reset' class='btnr reset'><p>RESET</p></div>
-        </div>
+        <div id='overlay' class="overlay">
+            <div class ='container-alerts'>
+                <div id='alert' class="alert">
+                    <audio id="alert-music" ></audio>
+                    <p id ='message' class='message'></p>
+                </div>
+                <div class="retry-container">
+                    <div id='btn-retry' class='btnr retry'><p>RETRY</p></div>
+                    <div id='btn-reset' class='btnr reset'><p>RESET</p></div>
+                </div>
+            </div>
         
     </div>
     <script src="./src/index.js"></script>
