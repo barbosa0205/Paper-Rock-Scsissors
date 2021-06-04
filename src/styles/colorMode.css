@@ -96,3 +96,12 @@
 .alert-lost {
   border: 5px solid #ff0000;
 }
+
+.settings-day {
+  color: #929292;
+}
+
+.paint-day {
+  /*ff4242*/
+  color: #fd4a4ae8;
+}
