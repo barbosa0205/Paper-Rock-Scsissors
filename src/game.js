@@ -27,6 +27,7 @@ const closeAlert = () => {
 const animation = e => {
   if (e == 1) {
     alertMusic.src = './src/music/win.wav'
+    alertMusic.volume = 0.4
     alertMusic.play()
     message.innerHTML = 'YOU WON <b>🏆</b>'
     overlay.classList.remove('overlay-hidden')
@@ -36,6 +37,7 @@ const animation = e => {
     alert.className += ' alert-won'
   } else if (e == 2) {
     alertMusic.src = './src/music/tie.wav'
+    alertMusic.volume = 0.4
     alertMusic.play()
     message.innerHTML = 'TIE <b>🤝</b>'
     overlay.classList.remove('overlay-hidden')
@@ -45,6 +47,7 @@ const animation = e => {
     alert.className += ' alert-tie'
   } else {
     alertMusic.src = './src/music/lost.wav'
+    alertMusic.volume = 0.4
     alertMusic.play()
     message.innerHTML = 'YOU LOST <b>😔</b>'
     overlay.classList.remove('overlay-hidden')

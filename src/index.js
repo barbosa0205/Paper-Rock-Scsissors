@@ -6,6 +6,11 @@ const btnPlayOut = document.querySelector('#btn-play')
 const btnPlayOn = document.querySelector('#play-on')
 const play = document.querySelector('#play')
 const reflect = document.querySelector('#reflect')
+const btnSetting = document.querySelector('#btn-setting')
+const iconSetting = document.querySelector('#icon-setting')
+const btnRoller = document.querySelector('#btn-roller')
+const iconRoller = document.querySelector('#icon-roller')
+
 let nightMode = false
 let count = 0
 
@@ -14,6 +19,16 @@ const changeNightMode = () => {
   colorMode.classList.remove('moon-day')
   nightBtn.className += ' span-night'
   nightBtn.classList.remove('span-day')
+
+  btnSetting.className += ' span-night'
+  btnSetting.classList.remove('span-day')
+  btnRoller.className += ' span-night'
+  btnRoller.classList.remove('span-day')
+  iconSetting.className += ' settings-night'
+  iconSetting.classList.remove('settings-day')
+  iconRoller.className += ' roller-night'
+  iconRoller.classList.remove('roller-day')
+
   header.className += ' header-night'
   header.classList.remove('header-day')
   main.className += ' main-night'
@@ -35,6 +50,16 @@ const changeDayMode = () => {
   colorMode.className += ' fa-moon'
   nightBtn.className += ' span-day'
   nightBtn.classList.remove('span-night')
+
+  btnSetting.className += ' span-day'
+  btnSetting.classList.remove('span-night')
+  btnRoller.className += ' span-day'
+  btnRoller.classList.remove('span-night')
+  iconSetting.className += ' settings-day'
+  iconSetting.classList.remove('settings-night')
+  iconRoller.className += ' roller-day'
+  iconSetting.classList.remove('roller-night')
+
   header.className += ' header-day'
   header.classList.remove('header-night')
   main.className += ' main-day'

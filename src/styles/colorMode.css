@@ -1,19 +1,23 @@
 .span-day {
   background-color: var(--background-primary-gray);
+  transition: 500ms;
 }
 
 .span-night {
   background-color: var(--background-primary-dark);
+  transition: 500ms;
 }
 
 .moon-day {
   text-shadow: 0 0 2px #666666;
   color: var(--primary-gray);
+  transition: 500ms;
 }
 
 .moon-night {
   text-shadow: 0 0 2px #666666;
-  color: rgb(212, 212, 212);
+  color: #d4d4d4;
+  transition: 500ms;
 }
 
 .span-day:hover {
@@ -101,7 +105,24 @@
   color: #929292;
 }
 
-.paint-day {
+.roller-day {
+  /*ff4242*/
+  color: #ff4242;
+  transition: 500ms;
+}
+
+.settings-night {
+  color: #d4d4d4;
+  transition: 500ms;
+}
+
+.settings-night:hover {
+  color: #ffffff;
+  transition: 500ms;
+}
+
+.roller-night {
   /*ff4242*/
   color: #fd4a4ae8;
+  transition: 500ms;
 }
