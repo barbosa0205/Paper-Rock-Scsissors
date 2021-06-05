@@ -1,20 +1,53 @@
-const close = document.querySelector('#close')
+const closePainter = document.querySelector('#close-painter')
 const overlayPainter = document.querySelector('.overlay-painter')
+const selectHand = document.querySelector('#select-hand')
+const applyHand = document.querySelector('#apply-hand')
+const imgPainter = document.querySelector('#img-painter')
 
 const openPaint = () => {
   overlayPainter.className += ' overlay-painter-visible'
 }
-
 const closePaint = () => {
   overlayPainter.classList.remove('overlay-painter-visible')
+}
+
+const changeColorHand = op => {
+  if (op.value == 'white') {
+    console.log('Hola, cambie de color', option)
+    rps.rock = './src/media/icons/rock.png'
+    rps.paper = './src/media/icons/paper.png'
+    rps.scissor = './src/media/icons/scissor.png'
+  } else if (op.value == 'yellow') {
+    rps.rock = './src/media/icons/rock-yellow.png'
+    rps.paper = './src/media/icons/paper-yellow.png'
+    rps.scissor = './src/media/icons/scissor-yellow.png'
+  } else if (op.value == 'brown') {
+    rps.rock = './src/media/icons/rock-brown.png'
+    rps.paper = './src/media/icons/paper-brown.png'
+    rps.scissor = './src/media/icons/scissor-brown.png'
+  } else if (op.value == 'orange') {
+    rps.rock = './src/media/icons/rock-orange.png'
+    rps.paper = './src/media/icons/paper-orange.png'
+    rps.scissor = './src/media/icons/scissor-orange.png'
+  }
+}
+
+const setColor = op => {
+  if (op.id == 'select-hand') {
+    changeColorHand(op)
+  } else if (op.id == 'select-button') {
+    console.log('green')
+  }
 }
 
 btnRoller.addEventListener('click', () => {
   openPaint()
 })
 
-btnSetting.addEventListener('click', () => {})
-
-close.addEventListener('click', () => {
+closePainter.addEventListener('click', () => {
   closePaint()
+})
+
+applyHand.addEventListener('click', () => {
+  setColor(selectHand)
 })

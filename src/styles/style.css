@@ -96,6 +96,7 @@ nav .moon {
   flex-wrap: wrap;
   width: 100%;
   min-width: 320px;
+  max-width: 870px;
   height: 80%;
 }
 

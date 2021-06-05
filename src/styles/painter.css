@@ -1,4 +1,5 @@
-.overlay-painter {
+.overlay-painter,
+.overlay-settings {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -11,14 +12,16 @@
   transition: 500ms ease all;
 }
 
-.overlay-painter-visible {
+.overlay-painter-visible,
+.overlay-settings-visible {
   visibility: visible;
   opacity: 1;
   transition: 500ms ease all;
 }
 
-.painter-container {
-  position: absolute;
+.painter-container,
+.settings-container {
+  position: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,6 +43,7 @@
   margin-right: 10px;
   margin-top: 5px;
   font-size: 2rem;
+  cursor: pointer;
 }
 
 .hand-paint-container {
@@ -64,6 +68,16 @@
   height: 30px;
   border: none;
   outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+
+.apply {
+  margin-left: 20px;
+  padding: 7px 15px;
+  border-radius: 4px;
+  background: #1d1d1d;
+  color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
 }

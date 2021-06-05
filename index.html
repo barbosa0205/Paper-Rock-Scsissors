@@ -99,23 +99,32 @@
     <div class='overlay-painter'>
         <div class="painter-container">
             <div class='close-container'>
-                <i id='close' class="fas fa-times"></i>
+                <i id='close-painter' class="fas fa-times"></i>
             </div>
             <div class='hand-paint-container'>
                 <img class='img-painter' src="./src/media/icons/scissor.png" alt="">
-                <select class='color-section'>
-                    <option value="">White</option>
-                    <option value="">Yellow</option>
-                    <option value="">Brown</option>
-                    <option value="">Orange</option>
+                <select class='color-section' id='select-hand'>
+                    <option value="white">White</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="brown">Brown</option>
+                    <option value="orange">Orange</option>
                 </select>
+                <span id='apply-hand' class='apply'>Apply</span>
             </div>
             <div class='buttons-paint-container'></div>
             <div class='interrogation-paint-container'></div>
         </div>
     </div>
+    <div class='overlay-settings'>
+        <div class="settings-container">
+            <div class='close-container'>
+                <i id='close-settings' class="fas fa-times"></i>
+            </div>
+        </div>
+    </div>
     <script src="./src/index.js"></script>
     <script src="./src/game.js"></script>
     <script src="./src/customize.js"></script>
+    <script src="./src/settings.js"></script>
 </body>
 </html>
