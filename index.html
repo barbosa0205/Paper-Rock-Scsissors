@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./src/styles/colors.css">
     <script src="https://kit.fontawesome.com/47d0b5dd24.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./src/styles/colorMode.css">
+    <link rel="stylesheet" href="./src/styles/painter.css">
 </head>
 <body>
 <header id="header" class='header-day'>
@@ -94,6 +95,24 @@
                 </div>
             </div>
         
+    </div>
+    <div class='overlay-painter'>
+        <div class="painter-container">
+            <div class='close-container'>
+                <i id='close' class="fas fa-times"></i>
+            </div>
+            <div class='hand-paint-container'>
+                <img class='img-painter' src="./src/media/icons/scissor.png" alt="">
+                <select class='color-section'>
+                    <option value="">White</option>
+                    <option value="">Yellow</option>
+                    <option value="">Brown</option>
+                    <option value="">Orange</option>
+                </select>
+            </div>
+            <div class='buttons-paint-container'></div>
+            <div class='interrogation-paint-container'></div>
+        </div>
     </div>
     <script src="./src/index.js"></script>
     <script src="./src/game.js"></script>
