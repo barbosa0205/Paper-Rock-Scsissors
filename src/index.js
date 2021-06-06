@@ -10,11 +10,12 @@ const btnSetting = document.querySelector('#btn-setting')
 const iconSetting = document.querySelector('#icon-setting')
 const btnRoller = document.querySelector('#btn-roller')
 const iconRoller = document.querySelector('#icon-roller')
-
+const body = document.querySelector('body')
 let nightMode = false
 let count = 0
 
 const changeNightMode = () => {
+  body.className += 'main-night'
   colorMode.className += ' moon-night'
   colorMode.classList.remove('moon-day')
   nightBtn.className += ' span-night'
@@ -44,6 +45,7 @@ const changeNightMode = () => {
 }
 
 const changeDayMode = () => {
+  body.classList.remove('main-night')
   colorMode.className += ' moon-day'
   colorMode.classList.remove('moon-night')
   colorMode.classList.remove('fa-sun')

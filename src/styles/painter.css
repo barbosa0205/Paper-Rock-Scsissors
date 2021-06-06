@@ -50,10 +50,7 @@
 .hand-paint-container {
   display: flex;
   align-items: center;
-<<<<<<< HEAD
-=======
   justify-content: space-evenly;
->>>>>>> e94640d0d9d7a917930afdc12f6cdc6732cfb955
   width: 100%;
   margin-top: 30px;
   background: #f0f0f0;
