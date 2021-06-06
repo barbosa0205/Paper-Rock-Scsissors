@@ -32,6 +32,8 @@
   background: #fdfdfd;
   border-radius: 8px;
   box-shadow: 0px 0px 10px #c2c1c1;
+  
+  background-color: blue;
 }
 
 .close-container {
@@ -50,6 +52,10 @@
 .hand-paint-container {
   display: flex;
   align-items: center;
+<<<<<<< HEAD
+=======
+  justify-content: space-evenly;
+>>>>>>> e94640d0d9d7a917930afdc12f6cdc6732cfb955
   width: 100%;
   margin-top: 30px;
   background: #f0f0f0;
@@ -66,10 +72,6 @@
 
 .img-painter {
   width: 80px;
-  margin-right: 80px;
-  margin-left: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 .color-section {
@@ -82,7 +84,6 @@
 }
 
 .apply {
-  margin-left: 20px;
   padding: 7px 15px;
   border-radius: 4px;
   background: #1d1d1d;
