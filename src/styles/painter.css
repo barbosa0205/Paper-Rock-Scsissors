@@ -23,10 +23,11 @@
 .settings-container {
   position: fixed;
   display: flex;
+  overflow: scroll;
   flex-direction: column;
   align-items: center;
   width: 90%;
-  height: 400px;
+  height: 450px;
   margin-top: 60px;
   background: #fdfdfd;
   border-radius: 8px;
@@ -49,10 +50,18 @@
 .hand-paint-container {
   display: flex;
   align-items: center;
-  position: absolute;
   width: 100%;
   margin-top: 30px;
   background: #f0f0f0;
+}
+
+.button-paint-container {
+  margin-top: 0;
+  background: #fff;
+}
+
+.interrogation-paint-container {
+  margin-top: 0;
 }
 
 .img-painter {
