@@ -21,26 +21,24 @@ header {
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
-.menu-container {
-  display: grid;
-  grid-template-columns: repeat(2, 5rem);
-}
+
 
 .icon-container {
   display: flex;
   align-items: center;
   width: 4.5rem;
   height: 4.5rem;
-  margin-top: 10px;
-  margin-left: 10px;
+  margin: 10px;
   border-radius: 8px;
+  display: inline-block;
 }
 
 .icon-container i {
   font-size: 3.5rem;
-  margin: 0 5px;
+  margin: 5px 5px;
 }
 
 nav span {
@@ -49,7 +47,7 @@ nav span {
   align-items: center;
   width: 4.5rem;
   height: 4.5rem;
-  margin: 20px 40px 20px;
+  margin: 10px;
   cursor: pointer;
   border-radius: 8px;
 }
@@ -65,14 +63,29 @@ nav .moon {
   flex-wrap: wrap;
   width: 80%;
   text-align: center;
+  justify-content: space-evenly;
 }
 
 .title {
-  font-size: 7rem;
+  font-size: 5rem;
   font-family: pixlkrud;
   color: var(--neon-green);
   text-shadow: 1px 1px 1px #000;
 }
+
+
+/*Lo de abajo dice que cuando la pantalla  tenga un minimo de 768px de ancho va a aumentar el ".title" a 7rem y que agregue un
+padding de 40 px a los lados del nav*/
+@media (min-width: 768px) {
+  .title {
+    font-size: 7rem;
+  }
+  nav{
+  padding: 0 40px;
+  }
+}
+
+
 
 .title:first-child {
   color: var(--neon-red);
@@ -87,7 +100,6 @@ nav .moon {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 100vh;
   min-width: 320px;
 }
 
@@ -133,7 +145,6 @@ nav .moon {
 .buttons-container {
   width: 100%;
   min-width: 320px;
-  padding-bottom: 300px;
 }
 
 .btn-container1 {
@@ -215,7 +226,6 @@ nav .moon {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 100vh;
   top: 0;
   left: 0;
   visibility: hidden;
