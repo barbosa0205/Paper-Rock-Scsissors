@@ -25,7 +25,6 @@ nav {
   width: 100%;
 }
 
-
 .icon-container {
   display: flex;
   align-items: center;
@@ -73,19 +72,16 @@ nav .moon {
   text-shadow: 1px 1px 1px #000;
 }
 
-
 /*Lo de abajo dice que cuando la pantalla  tenga un minimo de 768px de ancho va a aumentar el ".title" a 7rem y que agregue un
 padding de 40 px a los lados del nav*/
 @media (min-width: 768px) {
   .title {
     font-size: 7rem;
   }
-  nav{
-  padding: 0 40px;
+  nav {
+    padding: 0 40px;
   }
 }
-
-
 
 .title:first-child {
   color: var(--neon-red);
@@ -226,6 +222,7 @@ padding de 40 px a los lados del nav*/
   display: flex;
   justify-content: center;
   width: 100%;
+  height: 100vh;
   top: 0;
   left: 0;
   visibility: hidden;

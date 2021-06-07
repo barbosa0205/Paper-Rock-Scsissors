@@ -63,6 +63,8 @@ const changeColorHand = op => {
   }
 }
 
+const changeColorButton = op => {}
+
 const setColor = op => {
   if (op.id == 'select-hand') {
     changeColorHand(op)

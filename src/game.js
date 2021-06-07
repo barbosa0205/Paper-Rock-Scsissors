@@ -10,7 +10,7 @@ const message = document.querySelector('#message')
 const btnRetry = document.querySelector('#btn-retry')
 const btnReset = document.querySelector('#btn-reset')
 const alertMusic = document.querySelector('#alert-music')
-let rps = {
+const rps = {
   rock: './src/media/icons/rock.png',
   paper: './src/media/icons/paper.png',
   scissor: './src/media/icons/scissor.png'
