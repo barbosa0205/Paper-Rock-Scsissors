@@ -99,25 +99,25 @@ const toPlay = op => {
 }
 
 //dynamic change in the option img
-let op = 1
+let optionPlayer = 1
 btnRock.addEventListener('click', () => {
-  op = 1
+  optionPlayer = 1
   option.src = rps.rock
   return option
 })
 btnPaper.addEventListener('click', () => {
-  op = 2
+  optionPlayer = 2
   option.src = rps.paper
   return option
 })
 btnScissor.addEventListener('click', () => {
-  op = 3
+  optionPlayer = 3
   option.src = rps.scissor
   return option
 })
 
 btnPlay.addEventListener('click', () => {
-  toPlay(op)
+  toPlay(optionPlayer)
 })
 
 btnRetry.addEventListener('click', () => {

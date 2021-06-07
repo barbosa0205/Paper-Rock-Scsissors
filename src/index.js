@@ -15,7 +15,6 @@ let nightMode = false
 let count = 0
 
 const changeNightMode = () => {
-  body.className += 'main-night'
   colorMode.className += ' moon-night'
   colorMode.classList.remove('moon-day')
   nightBtn.className += ' span-night'
@@ -32,8 +31,8 @@ const changeNightMode = () => {
 
   header.className += ' header-night'
   header.classList.remove('header-day')
-  main.className += ' main-night'
-  main.classList.remove('main-day')
+  body.className += ' main-night'
+  body.classList.remove('main-day')
   btnPlayOut.className += ' play-out-night'
   btnPlayOn.className += ' play-on-night'
   play.className += ' play-night'
@@ -45,7 +44,6 @@ const changeNightMode = () => {
 }
 
 const changeDayMode = () => {
-  body.classList.remove('main-night')
   colorMode.className += ' moon-day'
   colorMode.classList.remove('moon-night')
   colorMode.classList.remove('fa-sun')
@@ -64,8 +62,8 @@ const changeDayMode = () => {
 
   header.className += ' header-day'
   header.classList.remove('header-night')
-  main.className += ' main-day'
-  main.classList.remove('main-night')
+  body.className += ' main-day'
+  body.classList.remove('main-night')
   btnPlayOut.classList.remove('play-out-night')
   btnPlayOn.classList.remove('play-on-night')
   play.classList.remove('play-night')
