@@ -1,4 +1,4 @@
-@import url('./fonts.css');
+@import url("./fonts.css");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -123,7 +123,7 @@ padding de 40 px a los lados del nav*/
 }
 
 .versus {
-  font-family: 'Enhanced Dot Digital-7';
+  font-family: "Enhanced Dot Digital-7";
   font-size: 7rem;
   color: var(--secundary-red);
   text-shadow: 0px 0px 5px var(--secundary-red);
@@ -136,6 +136,18 @@ padding de 40 px a los lados del nav*/
 
 .img-container img {
   width: 100%;
+}
+
+.win {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+}
+
+.win h2 {
+  font-size: 3.5rem;
 }
 
 .buttons-container {

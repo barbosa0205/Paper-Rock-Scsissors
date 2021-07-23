@@ -1,7 +1,9 @@
 const closePainter = document.querySelector('#close-painter')
 const overlayPainter = document.querySelector('.overlay-painter')
 const selectHand = document.querySelector('#select-hand')
+selectButton = document.querySelector('#select-button')
 const applyHand = document.querySelector('#apply-hand')
+const applyButton = document.querySelector('#apply-button')
 const imgPainter = document.querySelector('.img-painter')
 
 const openPaint = () => {
@@ -63,7 +65,13 @@ const changeColorHand = op => {
   }
 }
 
-const changeColorButton = op => {}
+const changeColorButton = op => {
+  if (op.value == 'red') {
+  } else if (op.value == 'purple') {
+  } else if (op.value == 'green') {
+  } else if (op.value == 'yellow') {
+  }
+}
 
 const setColor = op => {
   if (op.id == 'select-hand') {
@@ -83,4 +91,8 @@ closePainter.addEventListener('click', () => {
 
 applyHand.addEventListener('click', () => {
   setColor(selectHand)
+})
+
+applyButton.addEventListener('click', () => {
+  setColor(selectButton)
 })

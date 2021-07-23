@@ -38,6 +38,9 @@
                     <div class="player-container player">
                         <div class="img-container">
                             <img id ='option' src="./src/media/icons/rock.png" alt="p1">
+                            <div id="win" class="win">
+                                <h2 id="player-wins">0</h2>
+                            </div>
                         </div>
                     </div>
                        <p class='versus' id='count'>VS</p>
@@ -45,6 +48,9 @@
                     <div class="player-container cpu">
                         <div class="img-container">
                             <img id="cpu" src="./src/media/icons/interrogationSign.png" alt="p2">
+                            <div id="win-cpu" class="win">
+                                <h2 id="cpu-wins">0</h2>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -113,25 +119,31 @@
             </div>
 
             <div class='hand-paint-container button-paint-container'>
-                <img class='img-painter' src="./src/media/icons/scissor.png" alt="">
+                <div class='btn-chose-container'>
+                    <div id='btn-rock' class="button-out chose-out">
+                        <div class="button-on chose-on">
+                            <div class="reflect"></div>
+                        </div>
+                    </div>
+                </div>
                 <select class='color-section' id='select-hand'>
-                    <option value="white">White</option>
+                    <option value="red">Red</option>
+                    <option value="purple">purple</option>
+                    <option value="green">Green</option>
                     <option value="yellow">Yellow</option>
-                    <option value="brown">Brown</option>
-                    <option value="orange">Orange</option>
                 </select>
                 <span id='apply-hand' class='apply'>Apply</span>
             </div>
 
             <div class='hand-paint-container interrogation-paint-container'>
-                <img class='img-painter' src="./src/media/icons/scissor.png" alt="">
-                <select class='color-section' id='select-hand'>
+                <img class='img-painter' src="./src/media/icons/interrogationSign.png" alt="">
+                <select class='color-section' id='select-button'>
                     <option value="white">White</option>
                     <option value="yellow">Yellow</option>
                     <option value="brown">Brown</option>
                     <option value="orange">Orange</option>
                 </select>
-                <span id='apply-hand' class='apply'>Apply</span>
+                <span id='apply-button' class='apply'>Apply</span>
             </div>
         </div>
     </div>
