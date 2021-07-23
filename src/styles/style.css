@@ -294,7 +294,7 @@ padding de 40 px a los lados del nav*/
 
 .retry-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   position: absolute;
   top: 220px;
   left: 0;
@@ -311,6 +311,7 @@ padding de 40 px a los lados del nav*/
   align-items: center;
   width: 100px;
   height: 40px;
+  margin: 0 20px;
   font-family: fipps;
   font-size: 1.6rem;
   border-radius: 6px;
